@@ -1,107 +1,740 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+/*Dorado: #FDEBA0*/
+/*Rojo: #A6261E*/
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+body{
+    background-color: #01090B;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.navbar {
+    background-color: #01090B;
+    overflow: hidden;
+    display: flex; /* Esto permite usar flexbox para centrar el contenido */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 60px; /* Ajusta esto según tus necesidades */
+}
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+.nav-item {
+    margin: 0 15px;
+}
 
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+}
+
+.nav-item a:hover {
+    background-color: white;
+    color: #01090B;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #01090B;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
   }
+  
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer .copy {
+    margin-top: 20px;
+  }
+  
+
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .cards .red {
+    background-color: #A6261E;
+  }
+  
+  .cards .blue {
+    background-color: #FDEBA0;
+  }
+  
+  .cards .green {
+    background-color: #01090B;
+  }
+
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    width: 850px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .6em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+ 
+
+
+  
+  .card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 650px;
+    width: 850px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card2 p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card2 p.second-text {
+    font-size: .6em;
+  }
+  
+  .cards .card2:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card2:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .card9 {
+    overflow: visible;
+    width: 190px;
+    height: 254px;
+    margin-right: 50px;
+  }
+  
+  .content9 {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+  }
+  
+  .front9, .back9 {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back9 {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back9::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+    animation: rotation_481 5000ms infinite linear;
+  }
+  
+  .back-content9 {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card9:hover .content9 {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .front9 {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  .front9 .front-content9 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .front-content9 .badge9 {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+  }
+  
+  .description9 {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  .title9 {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title9 p {
+    width: 50%;
+  }
+  
+  .card-footer9 {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  .front9 .img9 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .circle9 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #A6261E;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+  }
+  
+  #bottom9 {
+    background-color: #A6261E;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  #right9 {
+    background-color: #A6261E;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+
+
+  
+.CardGrande{
+ 
+  padding: 10px;
+  
+    display: flex;
+    
+     width: 90%;
+    background-color: #FDEBA0;
+    height: 500px;
+    color:black;
+   
+  }
+  
+  .CardGrande_imagen{
+    width: 400px;
+    height: 90%;
+   margin: auto;
+  }
+  .CardGrande_imagen .imagen {
+    padding: 30px;
+    width: 500px;
+    height: 90%;
+    margin: auto;
+    /* Rotar la imagen 90 grados hacia la izquierda */
+    transform: translateX(-100px);
+  }
+  
+  
+
+  
+  .CardGrande_Contenido_titulo{
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  }
+  .CardGrande_Contenido_Descripcion {
+    width: 550px;
+    text-align: start;
+    padding: 20px; /* Añade un poco de padding para que el texto no esté pegado a los bordes */
+    margin: 10px 0; /* Añade un poco de margen arriba y abajo para separar el texto de otros elementos */
+   
+    border-radius: 8px; /* Bordes redondeados para un look más suave */
+   font-size: 16px; /* Un tamaño de fuente legible */
+    line-height: 1.6; /* Espaciado de línea para mejorar la legibilidad */
+  }
+  @media screen and (max-width: 600px) {
+  
+    .CardGrande{
+      display: flexbox;
+      height: 600px;
+      flex-wrap: wrap;
+      min-width: 20px;
+      flex: 1;
+  width: 100%;
+    }
+    .CardGrande_imagen{
+      width: 90%;
+      height: 50%;
+    }
+    .CardGrande_imagen .imagen{
+      padding: 10px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
+      .CardGrande  span {
+        margin-left: 30px;
+      }
+      .CardGrande_Contenido_Descipcion{
+        margin-left: 30px;
+        font-size: 15px;
+      }
+      
+    /* Otros estilos para pantallas pequeñas */
+    /* ... */
+  }
+  
+
+
+
+  .eslogan-container {
+    justify-content: center;
+margin: auto;
+    text-align: center;
+    background-color: #01090B; /* Gris oscuro para el contenedor */
+    color: #fcfcfc; /* Verde vibrante para contraste y energía */
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Sombra más profunda para más presencia */
+    max-width: 1200px; /* Controla el ancho máximo para legibilidad */
 }
 
-* {
+.eslogan {
+    font-size: 28px; /* Tamaño aún más grande para impacto */
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y fuerte */
+    font-weight: 700; /* Peso extra bold */
+    margin: 0;
+    line-height: 1.4; /* Espaciado de línea para mejor lectura */
+}
+
+/* Añade responsividad */
+@media (max-width: 768px) {
+    .eslogan {
+        font-size: 24px; /* Tamaño ajustado para pantallas pequeñas */
+    }
+    .eslogan-container {
+        padding: 20px;
+    }
+}
+
+
+
+.card22 {
+  width: 590px;
+  height: 454px;
+  background-image: linear-gradient(163deg, #A6261E 0%, #FDEBA0 100%);
+  border-radius: 20px;
+  transition: all .3s;
+ }
+ 
+ .card23 {
+  width: 590px;
+  height: 454px;
+  background-color: #01090B;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  transition: all .2s;
+ }
+ 
+ .card23:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
+ 
+ .card22:hover {
+  box-shadow: 0px 0px 30px 1px #A6261E;
+ }
+
+ .card-container{
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 20px; /* Espacio entre las tarjetas */
+  flex-wrap: wrap; 
+ }
+
+ .card-container p{
+font-size: 12px;
+ }
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+/*Card Promocion */
+
+
+ .containerProm .cardProm {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  position: relative;
+  z-index: 0;
+  transition: all 300ms ease-out;
+  transform-origin: center center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.card-headerProm {
+  padding: 10px;
+  background-color: #01090B;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.containerProm .cardProm .border {
+  transition: all 300ms ease-out;
+  transform-origin: center center;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 9px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.containerProm {
+  perspective: 1000px;
+  position: relative;
+
+  width: 100%;
+  max-width: 550px;
+  height: 550px;
+  border-radius: 10px;
+}
+.containerProm a {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+}
+.containerProm a:hover,
+.containerProm a:focus {
+  transform: translateZ(50px);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.containerProm a:hover ~ .cardProm .card-headerProm,
+.containerProm a:focus ~ .cardProm .card-headerProm {
+  transform: translateZ(24px);
+}
+
+.containerProm a:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.containerProm a:nth-child(1):hover ~ .cardProm,
+.containerProm a:nth-child(1):focus ~ .cardProm {
+  transform: rotateX(10deg) rotateY(-10deg) translateZ(0);
+  transform-origin: right bottom;
+  box-shadow: 10px 20px;
+}
+.containerProm a:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+.containerProm a:nth-child(2):hover ~ .cardProm,
+.containerProm a:nth-child(2):focus ~ .cardProm {
+  transform: rotateX(10deg) rotateY(10deg) translateZ(0);
+  transform-origin: left bottom;
+  box-shadow: -10px 20px;
+}
+.containerProm a:nth-child(3) {
+  bottom: 0;
+  right: 0;
+}
+.containerProm a:nth-child(3):hover ~ .cardProm ,
+.containerProm a:nth-child(3):focus ~ .cardProm {
+  transform-origin: left top;
+  transform: rotateX(-10deg) rotateY(10deg) translateZ(0);
+  box-shadow: -10px -20px;
+}
+.containerProm a:nth-child(4) {
+  bottom: 0;
+  left: 0;
+}
+.containerProm a:nth-child(4):hover ~ .cardProm,
+.containerProm a:nth-child(4):focus ~ .cardProm {
+  transform-origin: right top;
+  transform: rotateX(-10deg) rotateY(-10deg) translateZ(0);
+  box-shadow: 10px -20px;
+}
+
+
+
+
+
+
+
+
+/*Carusel */
+
+
+.carrusel {
+  position: relative;
+  max-width: 350px;
+  margin: auto;
+}
+
+.carrusel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carrusel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.carrusel button:first-child {
+  left: 10px;
+}
+
+.carrusel button:last-child {
+  right: 10px;
+}
+
+
+
+
+/* ModalInferior.module.css */
+.modal {
+border-radius: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 90%;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Asegúrate de que el z-index sea suficiente para que aparezca sobre otros elementos */
+  bottom: 0;
+  left: 0;
+  right: 0; /* Agregado para centrar horizontalmente */
+  margin: auto;
+  width: 100%;
+  max-width: 900px; /* Asegura que el modal no sea demasiado ancho en pantallas grandes */
+  background-color: #fff; /* Fondo más claro para mayor contraste */
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.button {
+  background: #FDEBA0;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid #A6261E;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }
