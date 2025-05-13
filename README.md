@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# NATURAL MEN - CUIDADO NATURAL PARA LA PIEL MASCULINA
 
-First, run the development server:
+## DESCRIPCIÓN
+Natural Men es una marca dedicada a ofrecer productos 100% naturales y orgánicos para el cuidado de la piel y belleza masculina. Nuestra plataforma web presenta una variedad de productos diseñados específicamente para hombres que buscan cuidar su piel con ingredientes naturales.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## MISIÓN
+Proveer productos de alta calidad para el cuidado de la piel y belleza masculina, comprometidos al 100% con ingredientes naturales, ofreciendo soluciones efectivas que resaltan la salud y confianza de nuestros clientes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## VISIÓN
+Consolidarnos como la principal empresa en Medellín dedicada al cuidado y belleza de la piel masculina, destacando por la excelencia de nuestros productos, el compromiso con la sostenibilidad y la satisfacción continua de nuestros clientes.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## OBJETIVO GENERAL
+Ofrecer productos de la más alta calidad, 100% orgánicos, para el cuidado de la belleza y la piel masculina en la ciudad.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## PRODUCTOS
+Ofrecemos una amplia gama de productos para el cuidado masculino, incluyendo:
+* Cremas hidratantes
+* Cremas para manos
+* Protectores solares
+* Productos para después de afeitar
+* Gel de aloe vera para el pelo
+* Bálsamos labiales
+* Desodorantes naturales
+* Geles limpiadores
 
-## Learn More
+## VALORES CORPORATIVOS
+* Innovación
+* Integridad
+* Responsabilidad Ambiental
+* Respeto
+* Compromiso
+* Profesionalismo
+* Trabajo en Equipo
+* Eficiencia
+* Honestidad
+* Cumplimiento
 
-To learn more about Next.js, take a look at the following resources:
+## IMPORTANCIA DEL CUIDADO MASCULINO
+El cuidado del cuerpo, la piel y la belleza no son exclusivos de las mujeres; los hombres también tienen el deber y la necesidad de cuidarse. Mantener una higiene adecuada, cuidar nuestra piel y prestar atención a nuestra apariencia son aspectos fundamentales para el bienestar general y la confianza personal.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## TECNOLOGÍA
+Este proyecto está desarrollado con Next.js, ofreciendo una experiencia web moderna y eficiente.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## CONTACTO
+Para más información sobre nuestros productos naturales para el cuidado masculino, visite nuestra web.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Natural Men: Donde la belleza y el cuidado de la piel se encuentran en la esencia de la naturaleza masculina.
